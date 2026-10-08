@@ -1,4 +1,46 @@
-آپ یہ بنیادی کوڈ کاپی کر کے پیسٹ کر سکتے ہیں:
+from pathlib import Path
+
+html = """<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محمد مشرف | سینٹری ورک</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,sans-serif;background:#f2f4f7;color:#222}
+    header{background:#263238;color:white;padding:28px 18px;text-align:center}
+    .logo{width:70px;height:70px;border-radius:50%;margin:auto;background:#fff;color:#263238;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:bold}
+    h1{margin:12px 0 6px}
+    .hero{padding:35px 18px;text-align:center}
+    .card{max-width:650px;margin:auto;background:white;padding:25px;border-radius:16px;box-shadow:0 4px 18px #0001}
+    .btn{display:block;text-decoration:none;color:white;padding:14px;margin:12px auto;border-radius:10px;max-width:320px;font-weight:bold}
+    .wa{background:#25D366}.call{background:#263238}
+    footer{text-align:center;padding:25px;color:#666}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MM</div>
+    <h1>محمد مشرف</h1>
+    <div>سینٹری ورک سروس</div>
+  </header>
+  <section class="hero">
+    <div class="card">
+      <h2>سینٹری کے کام کے لیے رابطہ کریں</h2>
+      <p>فلیکسِبل کام اور سینٹری سروس کے لیے براہِ راست رابطہ کریں۔</p>
+      <a class="btn wa" href="https://wa.me/923032201778">واٹس ایپ پر رابطہ کریں</a>
+      <a class="btn call" href="tel:03032201778">کال کریں</a>
+    </div>
+  </section>
+  <footer>© 2026 محمد مشرف</footer>
+</body>
+</html>
+"""
+
+path = Path("/mnt/data/index.html")
+path.write_text(html, encoding="utf-8")
+print(f"[Download index.html](sandbox:{path})")آپ یہ بنیادی کوڈ کاپی کر کے پیسٹ کر سکتے ہیں:
 <!DOCTYPE html>
 <html>
 <head>
