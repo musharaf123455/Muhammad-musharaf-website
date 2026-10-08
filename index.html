@@ -1,3 +1,5 @@
+
+
 from pathlib import Path
 
 html = """<!DOCTYPE html>
@@ -40,16 +42,4 @@ html = """<!DOCTYPE html>
 
 path = Path("/mnt/data/index.html")
 path.write_text(html, encoding="utf-8")
-print(f"[Download index.html](sandbox:{path})")آپ یہ بنیادی کوڈ کاپی کر کے پیسٹ کر سکتے ہیں:
-<!DOCTYPE html>
-<html>
-<head>
-<title>پلمبنگ سروسز</title>
-</head>
-<body>
-<h1>خوش آمدید! ہم بہترین پلمبنگ سروسز فراہم کرتے ہیں۔</h1>
-<p>ہم نل کی مرمت، پائپ لائن کی تنصیب اور ہر قسم کے پلمبنگ کے مسائل کا حل نکالتے ہیں۔</p>
-</body>
-</html>
-
-
+print(f"[Download index.html](sandbox:{path})")
